@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Néoro - Agência</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #0b0f2f;
+      color: white;
+      text-align: center;
+    }
+
+    header img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .banner {
+      padding: 80px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 60vh;
+    }
+
+    @keyframes brilhoTitulo {
+      0% { text-shadow: 0 0 10px #fff, 0 0 20px #ff0000, 0 0 40px #ff0000; }
+      50% { text-shadow: 0 0 20px #fff, 0 0 40px #ff4d4d, 0 0 80px #ff0000; }
+      100% { text-shadow: 0 0 10px #fff, 0 0 20px #ff0000, 0 0 40px #ff0000; }
+    }
+
+    .banner h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      font-weight: bold;
+      animation: brilhoTitulo 2s infinite alternate;
+      color: #ffdd57;
+    }
+
+    .banner p {
+      font-size: 20px;
+      max-width: 700px;
+      margin: 0 auto 30px;
+    }
+
+    .btn, button {
+      background: #ffdd57;
+      color: #000;
+      padding: 15px 30px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.3s;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(255,255,255,0.4);
+      border: none;
+      margin: 5px;
+    }
+
+    .btn:hover, button:hover {
+      background: #ffc42b;
+      box-shadow: 0 0 20px rgba(255,255,255,0.8), 0 0 40px rgba(255,0,0,0.6);
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 80px;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="Re.png" alt="Banner NEORO Agência">
+  </header>
+
+  <section class="banner">
+    <h1>Néoro - Agência de Vtubers</h1>
+    <p>O universo mágico das Vtubers e produtos exclusivos. Explore, colecione e viva essa experiência ✨</p>
+    <a href="produtos.html" class="btn">Ver Produtos</a>
+    <button id="botao">Talentos</button>
+  </section>
+
+  <footer>
+    © 2025 NEORO Agência — Todos os direitos reservados.
+  </footer>
+
+  <script>
+    // Redireciona para a página dos membros ao clicar em "Talentos"
+    const botao = document.getElementById("botao");
+    botao.addEventListener("click", () => {
+      window.location.href = "pagina2.html";
+    });
+  </script>
+</body>
+</html>
