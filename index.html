@@ -75,6 +75,22 @@
       padding: 20px;
       font-size: 14px;
     }
+
+    /* Estilo da mascote encostada na borda */
+    .mascote {
+      position: fixed;   /* fixa a mascote na tela */
+      bottom: 0;         /* encosta na borda inferior */
+      right: 0;          /* encosta na borda direita */
+      width: 120px;      /* tamanho da mascote */
+      height: auto;
+      z-index: 1000;     /* fica acima de outros elementos */
+      cursor: pointer;   /* cursor muda ao passar por cima */
+      transition: transform 0.3s;
+    }
+
+    .mascote:hover {
+      transform: scale(1.1); /* efeito de leve aumento */
+    }
   </style>
 </head>
 <body>
@@ -84,10 +100,13 @@
 
   <section class="banner">
     <h1>Néoro - Agência de Vtubers</h1>
-    <p>O universo mágico das Vtubers e produtos exclusivos. Explore, colecione e viva essa experiência ✨</p>
+    <p>Conheça Nossos Talentos e Produtos Exclusivos ✨</p>
     <a href="produtos.html" class="btn">Ver Produtos</a>
     <button id="botao">Talentos</button>
   </section>
+
+  <!-- Mascote encostada na borda inferior direita -->
+  <img src="mascote.png.png" alt="Mascote Néoro" class="mascote">
 
   <footer>
     © 2025 NEORO Agência — Todos os direitos reservados.
